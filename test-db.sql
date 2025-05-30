@@ -75,6 +75,7 @@ INSERT INTO prompts (category_id, prompt_text, difficulty_level) VALUES
 (5, 'Горные кемпинги и места для отдыха', 'easy');
 
 
+
 CREATE INDEX idx_category ON prompts(category_id);
 CREATE INDEX idx_difficulty ON prompts(difficulty_level);
 CREATE FULLTEXT INDEX idx_prompt_text ON prompts(prompt_text); 
